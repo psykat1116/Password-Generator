@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random-Password-Generator</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/png" href="icon.png" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Generate a Random Password</h1>
+      <div class="content">
+        <input
+          type="text"
+          id="password"
+          placeholder="Password"
+          value=""
+          disabled
+        />
+        <span><i class="fa-solid fa-copy"></i></span>
+      </div>
+      <div id="feature">
+        <div id="length">
+          <label>Password Length</label>
+          <input type="number" max="20" min="6" value="8" />
+        </div>
+        <div id="upper">
+          <label>Include Uppercase Letters</label>
+          <input type="checkbox" id="uppercase" checked />
+        </div>
+        <div id="lower">
+          <label>Include Lowercase Letters</label>
+          <input type="checkbox" id="lowercase" checked />
+        </div>
+        <div id="num">
+          <label>Include Numbers</label>
+          <input type="checkbox" id="number" />
+        </div>
+        <div id="sym">
+          <label>Include Symbols</label>
+          <input type="checkbox" id="symbol" />
+        </div>
+      </div>
+      <button type="button">Generate Password</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
